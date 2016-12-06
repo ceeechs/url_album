@@ -1,0 +1,152 @@
+.test{
+	color: red;
+}
+
+/*フォント使用可*/
+/*body *{
+  font-family: 'Noto Sans Japanese', sans-serif;
+}*/
+
+body {
+	/*background-image: url("https://pics.prcm.jp/19981016/19884470.jpeg");
+	background-repeat: repeat;*/
+	/*background-attachment: fixed;
+	background-position: right bottom*/
+}
+
+/*.container{
+	max-width: 100%;
+}*/
+
+.content{
+	margin-bottom: 30px;
+}
+
+.m_background_12{
+	/*background-image: url("https://pics.prcm.jp/19981016/19884470.jpeg");
+	background-repeat: repeat;*/
+	background: url("https://pics.prcm.jp/19981016/19884470.jpeg") repeat;
+}
+.m_background_01{
+	/*background-image: url("http://01.gatag.net/img/201507/14l/gatag-00010730.jpg");
+	background-repeat: repeat;*/
+	background: url("http://jonaden.jp/wordpress/wp-content/uploads/2013/01/kabegami-3-1.jpg") repeat;
+}
+
+.headder{
+	background-color: gray;
+	font-size: 130%;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 20px
+}
+
+video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.date{
+	text-align: center;
+}
+
+/*画像系*/
+img.type0 {
+	width: 80%;
+	height: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*3D回転*/
+	/*-webkit-transform: skewY(10deg);
+	-ms-transform: skewY(10deg);
+	transform: skewY(10deg);*/
+	transform: rotate( -10deg );
+}
+
+img.type1 {
+	width: 80%;
+	height: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+	/*3D回転*/
+	/*-webkit-transform: skewY(10deg);
+	-ms-transform: skewY(10deg);
+	transform: skewY(10deg);*/
+	transform: rotate( +3deg );
+}
+
+
+
+/*コメント系*/
+.comment_type_0 {
+	color: #fff;
+	background: #3cb371;
+	padding: 20px;
+	border: 2px dashed rgba(255,255,255,0.5);
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
+}
+
+.comment_type_1 {
+	color: #fff;
+	background: red;
+}
+
+/*.comment_type_2 {
+	color: #fff;
+	background: blue;
+}*/
+
+/* balloon-4 bottom-right */
+.comment_type_2 {
+	position: relative;
+	display: inline-block;
+	padding: 0 15px;
+	width: auto;
+	min-width: 115px;
+	height: 70px;
+	color: #F6F6F6;
+	line-height: 70px;
+	text-align: center;
+	background: #19283C;
+	border-radius: 60%;
+}
+.comment_type_2:before {
+	content: "";
+	position: absolute;
+	bottom: -10px; right: 20px;
+	margin-left: 0;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: #19283C;
+	border-radius: 30px 0 30px 0;
+	z-index: -1;
+}
+.comment_type_2:after {
+	content: "";
+	position: absolute;
+	bottom: -5px; right: 30px;
+	margin-left: 0;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: #FFF;
+	border-radius: 30px 0 30px 0;
+	z-index: -1;
+	-webkit-transform: rotate(-30deg);
+	   -moz-transform: rotate(-30deg);
+	    -ms-transform: rotate(-30deg);
+	     -o-transform: rotate(-30deg);
+	        transform: rotate(-30deg);
+}
+
+

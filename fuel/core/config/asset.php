@@ -75,7 +75,7 @@ return array(
 	 * These MUST include the trailing slash ('/')
 	 */
 	'url' => \Config::get('base_url'),
-	//'url' => \Config::get('base_url').'public/',
+	// 'url' => \Config::get('base_url').'public/',
 
 	/**
 	 * Whether to append the assets last modified timestamp to the url.

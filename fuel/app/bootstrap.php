@@ -8,6 +8,8 @@ require COREPATH.'bootstrap.php';
 ));
 
 // Register the autoloader
+\Autoloader::add_namespace('LINE', APPPATH.'vendor/linecorp/line-bot-sdk/src/', true);
+
 \Autoloader::register();
 
 /**

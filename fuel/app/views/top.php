@@ -1,0 +1,45 @@
+<body>
+	<?php $content_no = 0;?>
+	<?php foreach ($contents as $tmpKey => $content) { ?>
+		<?php
+			$year_month = substr($content->created_at, 0, 7);
+			$year = substr($content->created_at, 0, 4);
+			$month = substr($content->created_at, 5, 2);
+		?>
+
+		<?php if( isset($pre_month) && $pre_month != $month ) : ?>
+		<!-- jumbotronとcontainerの閉じタグ -->
+		<!-- htmlタグのインデントを基準に記載 -->
+				</div>
+			</div>
+		<?php endif ;?>
+
+		<?php if( empty( $pre_month ) || $pre_month != $month ) : ?>
+			<div class="jumbotron m_background_<?php echo $month;?>">
+				<div class="container">
+		<?php endif ;?>
+
+		<?php if ( $content_no == 0 || $prev_year_month != $year_month ): ?>
+				<div class="row">
+					<p class="date"><?php echo $content->created_at;?></p>
+				</div>
+		<?php endif; ?>
+		<?php $comment_class_no = $content_no % \Def_App::COMMENT_CSS_NUM; ?>
+		<?php $image_class_no = $content_no % \Def_App::IMAGE_CSS_NUM; ?>
+				<div class="row content">
+					<div class="col-sm-12">
+						<p class="comment_type_<?php echo $comment_class_no;?>"><?php echo $content->text;?></p>
+					</div>
+					<div>
+						<?php if($content->content_type == 'image'): ?>
+							<img class="type<?php echo $image_class_no;?> lazy" src="http://4.bp.blogspot.com/-rW0xesG7-6s/TtSJnSzlyNI/AAAAAAAABK0/0WPyiAQJN1g/s1600/slime.png" data-original="<?php echo $resources[$tmpKey]; ?>" alt="">
+						<?php elseif($content->content_type == 'video'): ?>
+							<video width="600" height="1100" autoplay loop muted preload=auto poster="" controls>
+								<source src="<?php echo $resources[$tmpKey]; ?>" >
+							</video>
+						<?php endif ; ?>
+					</div>
+				</div>
+		<?php $prev_year_month = $year_month; $pre_month = $month ; $content_no++; ?>
+	<?php } ?>
+</body>

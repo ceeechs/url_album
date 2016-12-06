@@ -19,3 +19,7 @@
 /fuel/app/logs/*/*/*
 /fuel/app/cache/*/*
 /fuel/app/config/crypt.php
+
+# important information
+/fuel/app/config/development/db.php
+/fuel/app/classes/def/bot.php
