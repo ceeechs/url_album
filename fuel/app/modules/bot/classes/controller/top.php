@@ -5,9 +5,6 @@
  */
 namespace Bot;
 
-use \LINE\LINEBot;
-use \LINE\LINEBot\HTTPClient\CurlHTTPClient;
-
 class Controller_Top extends \Controller_Rest
 {
     const BASE_URL = "http://url-album.xyz/";
