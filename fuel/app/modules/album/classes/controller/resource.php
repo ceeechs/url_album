@@ -21,6 +21,7 @@ class Controller_Resource extends \Controller_Rest
             $base64 = base64_encode($response->getRawBody());
             $mime = 'image/jpg';
             $resource = 'data:'.$mime.';base64,'.$base64;
+            header("Content-Type: image/jpeg");
             echo $resource;
         } else {
             $result = json_decode($response->getRawBody(), true);
