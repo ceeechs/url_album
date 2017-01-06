@@ -7,6 +7,10 @@
   font-family: 'Noto Sans Japanese', sans-serif;
 }*/
 
+body{
+	margin: 0;
+}
+
 /*.container{
 	max-width: 100%;
 }*/
@@ -46,8 +50,8 @@ video {
 
 /*画像系*/
 img.type0 {
-	width: 80%;
-	height: 80%;
+	width: 70%;
+	height: 70%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -59,8 +63,8 @@ img.type0 {
 }
 
 img.type1 {
-	width: 80%;
-	height: 80%;
+	width: 70%;
+	height: 70%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -75,10 +79,13 @@ img.type1 {
 
 
 /*コメント系*/
+/*グリーンラベル*/
 .comment_type_0 {
 	color: #fff;
 	background: #3cb371;
+	font-size: 150%;
 	padding: 20px;
+	margin: 30px 20px;
 	border: 2px dashed rgba(255,255,255,0.5);
 	border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -89,6 +96,7 @@ img.type1 {
 }
 
 .comment_type_1 {
+	font-size: 150%;
 	color: #fff;
 	background: red;
 }
