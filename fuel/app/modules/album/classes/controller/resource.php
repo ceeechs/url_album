@@ -18,9 +18,7 @@ class Controller_Resource extends \Controller_Rest
         // リソースの取得(LINEサーバー)
         $response = $bot->getMessageContent($content_id);
         if ($response->isSucceeded()) {
-            $base64 = base64_encode($response->getRawBody());
-            $mime = 'image/jpg';
-            $resource = 'data:'.$mime.';base64,'.$base64;
+            $resource = $response->getRawBody();
             header("Content-Type: image/jpeg");
             echo $resource;
         } else {
