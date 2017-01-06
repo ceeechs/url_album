@@ -23,7 +23,7 @@ class Controller_Top extends \Controller_Template
 		// Botインスタンス生成
 		$bot = new \LINE\LINEBot(
 		    new \LINE\LINEBot\HTTPClient\CurlHTTPClient(\Def_Bot::ACCESS_TOKEN),
-		    ['channelSecret' => \Def_Bot::::CHANNEL_SECRET]
+		    ['channelSecret' => \Def_Bot::CHANNEL_SECRET]
 		);
 
 		// リソースの取得(LINEサーバー)
