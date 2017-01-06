@@ -32,7 +32,7 @@
 					</div>
 					<div>
 						<?php if($content->content_type == 'image'): ?>
-							<img class="type<?php echo $image_class_no;?> lazy" src="http://4.bp.blogspot.com/-rW0xesG7-6s/TtSJnSzlyNI/AAAAAAAABK0/0WPyiAQJN1g/s1600/slime.png" data-original="<?php echo 'https://www.url-album.xyz/album/resource/index/'.$content->content_url; ?>" alt="">
+							<img class="type<?php echo $image_class_no;?> lazy" src="https://www.starflyer.jp/10th_anniversary/campaign/img/socialin/loading.gif" data-original="<?php echo $resources[$tmpKey]; ?>" alt="">
 						<?php elseif($content->content_type == 'video'): ?>
 							<video width="600" height="1100" autoplay loop muted preload=auto poster="" controls>
 								<source src= "<?php echo 'https://www.url-album.xyz/album/resource/index/'.$content->content_url; ?>" >

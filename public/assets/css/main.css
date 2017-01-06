@@ -55,6 +55,7 @@ img.type0 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 80px;
 	/*3D回転*/
 	/*-webkit-transform: skewY(10deg);
 	-ms-transform: skewY(10deg);
