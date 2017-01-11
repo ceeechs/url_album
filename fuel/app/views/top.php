@@ -21,7 +21,9 @@
 
 		<?php if ( $content_no == 0 || $prev_year_month != $year_month ): ?>
 				<div class="row">
-					<p class="date"><?php echo $content->created_at;?></p>
+					<p class="date">
+						<?php echo $year.'年'.$month.'月'; ?>
+					</p>
 				</div>
 		<?php endif; ?>
 		<?php $comment_class_no = $content_no % \Def_App::COMMENT_CSS_NUM; ?>
