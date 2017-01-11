@@ -27,18 +27,18 @@
 		<?php $comment_class_no = $content_no % \Def_App::COMMENT_CSS_NUM; ?>
 		<?php $image_class_no = $content_no % \Def_App::IMAGE_CSS_NUM; ?>
 				<div class="row content">
-					<div class="col-sm-12">
-						<p class="comment_type_<?php echo $comment_class_no;?>"><?php echo $content->text;?></p>
+					<div class="col-sm-12 comment_type_<?php echo $comment_class_no;?>">
+						<p><?php echo $content->text;?></p>
 					</div>
-					<div>
-						<?php if($content->content_type == 'image'): ?>
-							<img class="type<?php echo $image_class_no;?> lazy" src="https://www.starflyer.jp/10th_anniversary/campaign/img/socialin/loading.gif" data-original="<?php echo 'https://www.url-album.xyz/album/resource/index/'.$content->content_url; ?>" alt="">
-						<?php elseif($content->content_type == 'video'): ?>
+					<?php if($content->content_type == 'image'): ?>
+						<div class="type<?php echo $image_class_no;?>">
+							<img class="lazy" src="https://www.starflyer.jp/10th_anniversary/campaign/img/socialin/loading.gif" data-original="<?php echo 'https://www.url-album.xyz/album/resource/index/'.$content->content_url; ?>" alt="">
+					<?php elseif($content->content_type == 'video'): ?>
 							<video width="600" height="1100" autoplay loop muted preload=auto poster="" controls>
 								<source src= "<?php echo 'https://www.url-album.xyz/album/resource/index/'.$content->content_url; ?>" >
 							</video>
-						<?php endif ; ?>
-					</div>
+						</div>
+					<?php endif ; ?>
 				</div>
 		<?php $prev_year_month = $year_month; $pre_month = $month ; $content_no++; ?>
 	<?php } ?>

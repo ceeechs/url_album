@@ -77,78 +77,23 @@ img.type1 {
 	transform: rotate( +3deg );
 }
 
-
-
-/*コメント系*/
-/*グリーンラベル*/
-.comment_type_0 {
-	color: #fff;
-	background: #3cb371;
-	font-size: 150%;
-	padding: 20px;
-	margin: 30px 20px;
-	border: 2px dashed rgba(255,255,255,0.5);
-	border-radius: 6px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
-}
-
-.comment_type_1 {
-	font-size: 150%;
-	color: #fff;
-	background: red;
-}
-
-/*.comment_type_2 {
-	color: #fff;
-	background: blue;
-}*/
-
-/* balloon-4 bottom-right */
-.comment_type_2 {
-	position: relative;
+/*枠二重*/
+.img.type2 {
 	display: inline-block;
-	padding: 0 15px;
-	width: auto;
-	min-width: 115px;
-	height: 70px;
-	color: #F6F6F6;
-	line-height: 70px;
-	text-align: center;
-	background: #19283C;
-	border-radius: 60%;
+	position: relative;
 }
-.comment_type_2:before {
-	content: "";
+.img.type2:after {
 	position: absolute;
-	bottom: -10px; right: 20px;
-	margin-left: 0;
 	display: block;
-	width: 30px;
-	height: 30px;
-	background: #19283C;
-	border-radius: 30px 0 30px 0;
-	z-index: -1;
-}
-.comment_type_2:after {
 	content: "";
-	position: absolute;
-	bottom: -5px; right: 30px;
-	margin-left: 0;
-	display: block;
-	width: 30px;
-	height: 30px;
-	background: #FFF;
-	border-radius: 30px 0 30px 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transform: rotate(3deg); /* 回転させる */
+	background: #fff;
 	z-index: -1;
-	-webkit-transform: rotate(-30deg);
-	   -moz-transform: rotate(-30deg);
-	    -ms-transform: rotate(-30deg);
-	     -o-transform: rotate(-30deg);
-	        transform: rotate(-30deg);
 }
 
 

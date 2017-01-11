@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title><?php echo $title; ?></title>
-	<?php echo Asset::css(array("main.css","bootstrap.css")); ?>
+	<?php echo Asset::css(array("main.css", "comment.css", "bootstrap.css")); ?>
 	<?php echo Asset::js("jquery-3.1.1.min.js"); ?>
 	<?php echo Asset::js("jquery.lazyload.min.js"); ?>
 	<?php echo Asset::js("bootstrap.min.js"); ?>

@@ -1,0 +1,122 @@
+/*コメント系*/
+/*グリーンラベル*/
+.comment_type_0 {
+	color: #fff;
+	background: #3cb371;
+	font-size: 150%;
+	padding: 20px;
+	margin: 30px 20px;
+	border: 2px dashed rgba(255,255,255,0.5);
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
+}
+
+.comment_type_1 {
+	font-size: 150%;
+	color: #fff;
+	background: red;
+}
+
+/*吹き出し型*/
+/* balloon-4 bottom-right */
+.comment_type_2 {
+	position: relative;
+	display: inline-block;
+	padding: 0 15px;
+	width: auto;
+	min-width: 115px;
+	height: 70px;
+	color: #F6F6F6;
+	line-height: 70px;
+	text-align: center;
+	background: #19283C;
+	border-radius: 60%;
+}
+.comment_type_2:before {
+	content: "";
+	position: absolute;
+	bottom: -10px; right: 20px;
+	margin-left: 0;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: #19283C;
+	border-radius: 30px 0 30px 0;
+	z-index: -1;
+}
+.comment_type_2:after {
+	content: "";
+	position: absolute;
+	bottom: -5px; right: 30px;
+	margin-left: 0;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: #FFF;
+	border-radius: 30px 0 30px 0;
+	z-index: -1;
+	-webkit-transform: rotate(-30deg);
+	   -moz-transform: rotate(-30deg);
+	    -ms-transform: rotate(-30deg);
+	     -o-transform: rotate(-30deg);
+	        transform: rotate(-30deg);
+}
+
+/* ring */
+/*http://codepen.io/fixcl/pen/anwsG*/
+.comment_type_3{
+  color:rgb(220,220,226);
+  position:absolute;
+  top:50%; left:50%;
+  margin-left:-180px;
+  margin-top:-90px;
+  width:180px;
+  height:180px;
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+  font-size:90px/4;
+  line-height:180px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.comment_type_3:after,
+.comment_type_3:before{
+  content:"";
+  border-radius:100%;
+  position:absolute;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  transform-origin:center center;
+}
+
+.comment_type_3:after{
+  box-shadow: inset 0 90px/8 0 rgba(250, 250, 0, 0.8),
+              inset 90px/8 0 0 rgba(250, 200, 0, 0.8),
+              inset 0 -90px/8 0 rgba(250, 150, 0, 0.8),
+              inset -90px/8 0 0 rgba(250, 100, 0, 0.8);
+  animation:rotar 1.5s linear infinite;
+}
+
+.comment_type_3:before{
+  box-shadow: inset 0 90px/8 0 rgba(0, 250, 250, 0.8),
+              inset 90px/8 0 0 rgba(0, 200, 200, 0.8),
+              inset 0 -90px/8 0 rgba(0, 150, 200, 0.8),
+              inset -90px/8 0 0 rgba(0, 200, 250, 0.8);
+  animation:rotarIz 1.5s linear infinite;
+}
+
+/*枠線*/
+/*http://coliss.com/articles/build-websites/operation/css/css-border-radius-exercise-by-jrcharvey.html*/
+.comment_type_4{
+	border:solid 5px #0ff;
+	width:200px;
+	margin:25px auto;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	padding:10px;
+}
+
