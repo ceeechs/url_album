@@ -4,11 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="robots" content="noimageindex">
 	<title><?php echo $title; ?></title>
-	<?php echo Asset::css(array("main.css", "comment.css", "bootstrap.css")); ?>
-	<?php echo Asset::js("jquery-3.1.1.min.js"); ?>
-	<?php echo Asset::js("jquery.lazyload.min.js"); ?>
-	<?php echo Asset::js("bootstrap.min.js"); ?>
-	<?php echo Asset::js("main.js"); ?>
+	<?php echo Asset::css(array("main.css", "comment.css", "bootstrap.css", "zoom.css")); ?>
+	<?php echo Asset::js(array("jquery-3.1.1.min.js", "jquery.lazyload.min.js", "bootstrap.min.js", "main.js", "zoom.js")); ?>
 	<style>@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);</style>
 </head>
 <body>
