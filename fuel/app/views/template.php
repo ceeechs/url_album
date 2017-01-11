@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
+	<meta name="robots" content="noimageindex">
 	<title><?php echo $title; ?></title>
 	<?php echo Asset::css(array("main.css", "comment.css", "bootstrap.css")); ?>
 	<?php echo Asset::js("jquery-3.1.1.min.js"); ?>
