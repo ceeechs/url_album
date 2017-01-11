@@ -116,7 +116,7 @@
 /*http://coliss.com/articles/build-websites/operation/css/css-border-radius-exercise-by-jrcharvey.html*/
 .comment_type_4{
 	border:solid 5px #0ff;
-	width:200px;
+	/*width:200px;*/
 	margin:25px auto;
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	padding:10px;
