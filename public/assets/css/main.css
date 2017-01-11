@@ -14,6 +14,13 @@ body {
 	font-size:40px;
 }
 
+/*配色参考*/
+/*http://www.colourlovers.com/palette/57650/She_Sells_Seashells.*/
+
+.header{
+	background-color: #FFFEE4;
+}
+
 .container{
 	max-width: 100%;
 }
