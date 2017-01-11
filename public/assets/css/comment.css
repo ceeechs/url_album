@@ -144,3 +144,21 @@
 	border-top: 15px solid #fff;
 }
 
+.comment_type_6 {
+    border: 2px solid #da4033;
+    border-radius: 4px;
+    margin: 2em 0;
+    padding: 2em;
+    position: relative;
+}
+.comment_type_6::before {
+    background-color: #fff;
+    color: #da4033;
+    content: "POINT";
+    font-weight: bold;
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
