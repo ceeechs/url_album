@@ -37,7 +37,8 @@ body {
 .m_background_01{
 	/*background-image: url("http://01.gatag.net/img/201507/14l/gatag-00010730.jpg");
 	background-repeat: repeat;*/
-	background: url("http://jonaden.jp/wordpress/wp-content/uploads/2013/01/kabegami-3-1.jpg") repeat;
+	/*background: url("http://jonaden.jp/wordpress/wp-content/uploads/2013/01/kabegami-3-1.jpg") repeat;*/
+	background-color: #D0ECEA;
 }
 
 .headder{
