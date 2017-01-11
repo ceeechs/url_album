@@ -13,7 +13,7 @@
 		<div class="row headder">
 			<div class="col-sm-12">
 				<!-- <button type="button" class="btn btn-default">Default</button> -->
-				<p class="header">URL-ALBUM</p>
+				<p>URL-ALBUM</p>
 			</div>
 		</div>
 	</div>
