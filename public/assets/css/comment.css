@@ -1,6 +1,15 @@
 /*コメント系*/
-/*グリーンラベル*/
 .comment_type_0 {
+	padding: 10px 20px;
+	margin: 10px;
+	background: #FFFEE4;
+	box-shadow: #FFFEE4 0 0 10px 10px;
+	-webkit-box-shadow: #FFFEE4 0 0 10px 10px;
+	-moz-box-shadow: #FFFEE4 0 0 10px 10px;
+}
+
+/*グリーンラベル*/
+.comment_type_1 {
 	color: #fff;
 	background: #3cb371;
 	padding: 20px;
@@ -12,15 +21,6 @@
 	box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0 0 0 5px #3cb371, 0 2px 3px 5px rgba(0,0,0,0.5);
-}
-
-.comment_type_1 {
-	padding: 10px 20px;
-	margin: 10px;
-	background: #FFFEE4;
-	box-shadow: #FFFEE4 0 0 10px 10px;
-	-webkit-box-shadow: #FFFEE4 0 0 10px 10px;
-	-moz-box-shadow: #FFFEE4 0 0 10px 10px;
 }
 
 /*吹き出し型*/
