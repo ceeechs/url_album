@@ -78,11 +78,11 @@ img.type1 {
 }
 
 /*枠二重*/
-.img.type2 {
+img.type2 {
 	display: inline-block;
 	position: relative;
 }
-.img.type2:after {
+img.type2:after {
 	position: absolute;
 	display: block;
 	content: "";
