@@ -5,7 +5,7 @@
 	class Def_App
 	{
 		const TYPE_TEXT = 'text';
-		const COMMENT_CSS_NUM = 2;
+		const COMMENT_CSS_NUM = 1;
 		const IMAGE_CSS_NUM = 2;
 	}
 
