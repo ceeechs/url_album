@@ -15,8 +15,12 @@
 }
 
 .comment_type_1 {
-	color: #fff;
-	background: red;
+	padding: 10px 20px;
+	margin: 10px;
+	background: #ffe4e1;
+	box-shadow: #ffe4e1 0 0 10px 10px;
+	-webkit-box-shadow: #ffe4e1 0 0 10px 10px;
+	-moz-box-shadow: #ffe4e1 0 0 10px 10px;
 }
 
 /*吹き出し型*/
