@@ -12,10 +12,10 @@ class Controller_Top extends \Controller_Template
 	public function action_index( $album_id )
 	{
 		$resources = [];
-		$expired_date = date('Y-m-d H:i:s', strtotime('-2 week', time())) // 2週間前の日付
+		$expired_date = date('Y-m-d H:i:s', strtotime('-2 week', time())); // 2週間前の日付
 
 		// TODO::コンテンツないい時の専用ページに飛ばしてもいいかも
-		if ( empty($album_id) ) { \View::forge('test', $data); }
+		if ( empty($album_id) ) \View::forge('test', $data);
 
 		// DBからデータ取得
 		$data['contents'] = \Model_Contents::find_by( 'album_id', $album_id);
