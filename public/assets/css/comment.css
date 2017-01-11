@@ -17,10 +17,10 @@
 .comment_type_1 {
 	padding: 10px 20px;
 	margin: 10px;
-	background: #ffe4e1;
-	box-shadow: #ffe4e1 0 0 10px 10px;
-	-webkit-box-shadow: #ffe4e1 0 0 10px 10px;
-	-moz-box-shadow: #ffe4e1 0 0 10px 10px;
+	background: #FFFEE4;
+	box-shadow: #FFFEE4 0 0 10px 10px;
+	-webkit-box-shadow: #FFFEE4 0 0 10px 10px;
+	-moz-box-shadow: #FFFEE4 0 0 10px 10px;
 }
 
 /*吹き出し型*/
