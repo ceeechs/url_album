@@ -24,7 +24,11 @@ class Controller_Top extends \Controller_Template
 			if ($value['created_at'] < $expired_date) {
 				// 表示対象から取り除く
 				unset($data['contents'][$key]);
-				// TODO:DBからも取り除く?
+				// delフラグ立てる
+				\Model_Contents::forge(array(
+				    'content_id' => $value['content_id'],
+				    'is_deleted' => 1
+				    ))->is_new(false)->save();
 			}
 		}
 
