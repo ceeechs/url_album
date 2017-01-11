@@ -12,13 +12,21 @@ class Controller_Top extends \Controller_Template
 	public function action_index( $album_id )
 	{
 		$resources = [];
+		$expired_date = date('Y-m-d H:i:s', strtotime('-2 week', time())); // 2週間前の日付
 
 		// TODO::コンテンツないい時の専用ページに飛ばしてもいいかも
-		if ( empty($album_id) ) { \View::forge('test', $data); }
+		if ( empty($album_id) ) \View::forge('test', $data);
 
 		// DBからデータ取得
 		$data['contents'] = \Model_Contents::find_by( 'album_id', $album_id);
-//echo"<pre>\n";print_r($album[0]);echo"<hr></pre>";exit;
+		foreach ($data['contents'] as $key => $value) {
+			// もし2週間以上前のデータだったら
+			if ($value['created_at'] < $expired_date) {
+				// 表示対象から取り除く
+				unset($data['contents'][$key]);
+				// TODO:DBからも取り除く?
+			}
+		}
 
 		$this->template->content = \View::forge('top', $data);
 
