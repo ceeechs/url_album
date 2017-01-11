@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row headder">
+		<div class="row header">
 			<div class="col-sm-12">
 				<!-- <button type="button" class="btn btn-default">Default</button> -->
 				<p>URL-ALBUM</p>

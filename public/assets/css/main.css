@@ -17,10 +17,6 @@ body {
 /*配色参考*/
 /*http://www.colourlovers.com/palette/57650/She_Sells_Seashells.*/
 
-.header{
-	background-color: #D0ECEA;
-}
-
 .container{
 	max-width: 100%;
 }
@@ -32,7 +28,8 @@ body {
 .m_background_12{
 	/*background-image: url("https://pics.prcm.jp/19981016/19884470.jpeg");
 	background-repeat: repeat;*/
-	background: url("https://pics.prcm.jp/19981016/19884470.jpeg") repeat;
+	/*background: url("https://pics.prcm.jp/19981016/19884470.jpeg") repeat;*/
+	background-color: #8B7A5E;
 }
 .m_background_01{
 	/*background-image: url("http://01.gatag.net/img/201507/14l/gatag-00010730.jpg");
@@ -42,9 +39,9 @@ body {
 }
 
 .headder{
-	background-color: gray;
+	background-color: #D0ECEA;
 	text-align: center;
-	padding: 10px;
+	padding: 15px;
 	margin-bottom: 20px
 }
 
@@ -56,6 +53,7 @@ video {
 
 .date{
 	text-align: center;
+	padding: 30px 0;
 }
 
 /*画像系*/
