@@ -5,8 +5,8 @@
 	class Def_App
 	{
 		const TYPE_TEXT = 'text';
-		const COMMENT_CSS_NUM = 4;
-		const IMAGE_CSS_NUM = 2;
+		const COMMENT_CSS_NUM = 5;
+		const IMAGE_CSS_NUM = 3;
 	}
 
 ?>

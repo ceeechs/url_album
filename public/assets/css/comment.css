@@ -120,3 +120,29 @@
 	padding:10px;
 }
 
+/*シンプルな吹き出し*/
+.comment_type_5 {
+	position: relative;
+	padding: .5em .75em;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+.comment_type_5::before,
+.comment_type_5::after {
+	position: absolute;
+	top: 100%;
+	left: 30px;
+	content: '';
+	height: 0;
+	width: 0;
+	border: 10px solid transparent;
+}
+.comment_type_5::before {
+	border-top: 15px solid #ccc;
+}
+.comment_type_5::after {
+	margin-top: -2px;
+	border-top: 15px solid #fff;
+}
+
