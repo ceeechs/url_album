@@ -80,11 +80,11 @@ img.type1 {
 
 /*枠二重*/
 img.type2 {
-	display: inline-block;
-	position: relative;
+	/*display: inline-block;
+	position: relative;*/
 }
 img.type2:after {
-	position: absolute;
+	/*position: absolute;
 	display: block;
 	content: "";
 	top: 0;
@@ -92,9 +92,9 @@ img.type2:after {
 	width: 100%;
 	height: 100%;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-	transform: rotate(3deg); /* 回転させる */
+	transform: rotate(3deg);
 	background: #fff;
-	z-index: -1;
+	z-index: -1;*/
 }
 
 

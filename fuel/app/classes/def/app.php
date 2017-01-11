@@ -6,7 +6,7 @@
 	{
 		const TYPE_TEXT = 'text';
 		const COMMENT_CSS_NUM = 5;
-		const IMAGE_CSS_NUM = 3;
+		const IMAGE_CSS_NUM = 2;
 	}
 
 ?>
