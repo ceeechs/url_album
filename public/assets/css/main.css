@@ -11,12 +11,12 @@ body {
 	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	color:#630;
 	line-height:25px;
-	font-size:0.95em;
+	font-size:70px;
 }
 
-/*.container{
+.container{
 	max-width: 100%;
-}*/
+}
 
 .content{
 	margin-bottom: 30px;
@@ -35,7 +35,6 @@ body {
 
 .headder{
 	background-color: gray;
-	font-size: 130%;
 	text-align: center;
 	padding: 10px;
 	margin-bottom: 20px
