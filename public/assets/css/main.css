@@ -7,9 +7,9 @@
   font-family: 'Noto Sans Japanese', sans-serif;
 }*/
 
-body{
+p{
 	margin: 0;
-	font-size: 500%;
+	font-size: 30px;
 }
 
 /*.container{
