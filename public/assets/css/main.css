@@ -50,7 +50,7 @@ video {
 }
 
 /*画像系*/
-.type0 {
+img.type0 {
 	width: 70%;
 	height: 70%;
 	display: block;
@@ -64,7 +64,7 @@ video {
 	transform: rotate( -10deg );
 }
 
-.type1 {
+img.type1 {
 	width: 70%;
 	height: 70%;
 	display: block;
@@ -79,11 +79,11 @@ video {
 }
 
 /*枠二重*/
-.type2 {
+img.type2 {
 	display: inline-block;
 	position: relative;
 }
-.type2:after {
+img.type2:after {
 	position: absolute;
 	display: block;
 	content: "";
