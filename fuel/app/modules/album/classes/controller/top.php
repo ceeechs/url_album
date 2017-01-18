@@ -25,7 +25,7 @@ class Controller_Top extends \Controller_Template
 			'order_by' => [
 				'created_at' => 'desc',
 			]
-		]
+		];
 		$data['contents'] = \Model_Contents::find_by( $condition );
 
 		foreach ($data['contents'] as $key => $value) {
