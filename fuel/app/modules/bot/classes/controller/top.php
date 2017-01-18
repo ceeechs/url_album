@@ -212,7 +212,7 @@ class Controller_Top extends \Controller_Rest
     {
         // 返信データを取得
         $data = $event->getPostbackData($event);
-        $data = json_decode($data);
+        $data = json_decode($data, true);
         $post_back_id = $data['post_back_id'];
         $command = $data['command'];
 
