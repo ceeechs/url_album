@@ -355,10 +355,15 @@ class Controller_Top extends \Controller_Rest
         ))->is_new(true)->save();
 
         // アルバム新規作成
+        $url = $this->create_url();
+        $result = \Model_Albums::forge(array(
+            'user_id' => $id,
+            'album_url' => $url
+        ))->save();
 
         // 挨拶を送る
         $reply_token = $event->getReplyToken();
-        $bot->replyText($reply_token, 'よろしくデビな〜♪');
+        $bot->replyText($reply_token, '送った写真はここで見えるデビよ！'.\n.self::BASE_URL.$url.\n.'よろしくデビな〜♪');
     }
 
     /**
