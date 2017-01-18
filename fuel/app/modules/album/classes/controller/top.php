@@ -17,7 +17,7 @@ class Controller_Top extends \Controller_Template
 		// DBからデータ取得
 		$condition = [
 			'where' => [
-				['album_id ', '=', $album_id ],
+				['album_id', '=', $album_id ],
 			],
 			'order_by' => [
 				'created_at' => 'desc',
