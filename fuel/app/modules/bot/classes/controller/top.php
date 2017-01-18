@@ -226,10 +226,8 @@ class Controller_Top extends \Controller_Rest
         if($post_back_id == $user['last_post_back_id']) return;
 
         // 最後に使ったポストバックidを保存
-        $result = \Model_Users::forge(array(
-            'user_id' => $id,
-            'last_post_back_id' => $post_back_id
-        ))->is_new(false)->save();
+        $user->last_post_back_id = $post_back_id;
+        $user->save();
 
         // 返信データに基いて処理を分岐
         switch ($command) {
