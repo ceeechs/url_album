@@ -183,13 +183,13 @@ class Controller_Top extends \Controller_Rest
         } else {
             $status = self::BASE_URL.$result['album_url']."\n"."を作成中デビよー";
             $command = 'confirm_finish';
-            $data = json_encode(array('command' => $command, 'post_back_id' = $post_back_id));
+            $data = json_encode(array('command' => $command, 'post_back_id' => $post_back_id));
             // 作成完了メニューを追加
             $menu[] = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("アルバム作成を終えるデビ", $data);
         }
         // アルバム一覧表示は常に追加
         $command = 'url_list';
-        $data = json_encode(array('command' => $command, 'post_back_id' = $post_back_id));
+        $data = json_encode(array('command' => $command, 'post_back_id' => $post_back_id));
         $menu[]= new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("アルバム一覧を表示デビ", $data);
 
         // Buttonテンプレートを作る
@@ -301,11 +301,11 @@ class Controller_Top extends \Controller_Rest
             case 'confirm_create':
                 // 「はい」ボタン
                 $command = 'create_album';
-                $data = json_encode(array('command' => $command, 'post_back_id' = $post_back_id));
+                $data = json_encode(array('command' => $command, 'post_back_id' => $post_back_id));
                 $yes_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("はい", $data);
                 // 「いいえ」ボタン
                 $command = 'not_create_album';
-                $data = json_encode(array('command' => $command, 'post_back_id' = $post_back_id));
+                $data = json_encode(array('command' => $command, 'post_back_id' => $post_back_id));
                 $no_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("いいえ", $data);
                 // Confirmテンプレートを作る
                 $confirm = new \LINE\LINEBot\MessageBuilder\TemplateBuilder\ConfirmTemplateBuilder("新しいアルバムを作るデビか？", [$yes_post, $no_post]);
@@ -322,11 +322,11 @@ class Controller_Top extends \Controller_Rest
                 // アルバム完成確認用返信作成
                 // 「はい」ボタン
                 $command = 'finish_album';
-                $data = json_encode(array('command' => $command, 'post_back_id' = $post_back_id));
+                $data = json_encode(array('command' => $command, 'post_back_id' => $post_back_id));
                 $yes_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("はい", $data);
                 // 「いいえ」ボタン
                 $command = 'not_finish_album';
-                $data = json_encode(array('command' => $command, 'post_back_id' = $post_back_id));
+                $data = json_encode(array('command' => $command, 'post_back_id' => $post_back_id));
                 $no_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("いいえ", $data);
                 // Confirmテンプレートを作る
                 $confirm = new \LINE\LINEBot\MessageBuilder\TemplateBuilder\ConfirmTemplateBuilder("今のアルバムを作り終えるデビか？"."\n"."一度作成を終えたアルバムにはもう追加出来ないから気をつけるデビよー", [$yes_post, $no_post]);
