@@ -10,6 +10,14 @@
 
 console.log("Hello World");
 
+// ヘッダーメニュー
+$('#header-menu').slicknav({
+	label: '',
+	duration: 1000,
+	easingOpen: "easeOutBounce", //available with jQuery UI
+	// prependTo:'#demo2'
+});
+
 // 遅延読み込み 参考=>https://syncer.jp/how-to-setting-lazy-load-images
 // Lazy Loadを起動する
 $( function(){
