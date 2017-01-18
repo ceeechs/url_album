@@ -26,7 +26,8 @@ class Controller_Top extends \Controller_Template
 				'created_at' => 'desc',
 			]
 		];
-		$data['contents'] = \Model_Contents::find_by( $condition );
+
+		$data['contents'] = \Model_Contents::find( $condition );
 
 		foreach ($data['contents'] as $key => $value) {
 			// もし2週間以上前のデータだったら
