@@ -177,7 +177,7 @@ class Controller_Top extends \Controller_Rest
         if(empty($result)) {
             $status = "今はアルバムを作ってないデビよ";
             $command = 'confirm_create';
-            $data = json_encode(array('command' => $command, 'post_back_id' = $post_back_id));
+            $data = json_encode(array('command' => $command, 'post_back_id' => $post_back_id));
             // 新規作成メニューを追加
             $menu[] = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("新規アルバムを作成デビ", $data);
         } else {
