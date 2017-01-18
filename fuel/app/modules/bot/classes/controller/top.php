@@ -229,6 +229,9 @@ class Controller_Top extends \Controller_Rest
         $user->set(['last_post_back_id' => $post_back_id])->save();
         \Log::debug(print_r(\DB::last_query(),true));
 
+        // post_back_idの新規生成
+        $post_back_id = mt_rand();
+
         // 返信データに基いて処理を分岐
         switch ($command) {
             case 'not_create_album':
