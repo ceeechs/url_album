@@ -3,6 +3,9 @@
  * (c) 2016 Josh Cope
  * licensed under MIT
  */
+
+console.log("slicknavi 読み込み");
+
 ;(function ($, document, window) {
     var
     // default settings object.
