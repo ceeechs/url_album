@@ -39,7 +39,7 @@
 		<nav class="drawer-nav" role="navigation">
 		<ul class="drawer-menu">
 		<li><a class="drawer-brand" href="#">Brand</a></li>
-		<li><a class="drawer-menu-item" href="#">Nav1</a></li>
+		<li><a class="drawer-menu-item" href="http://git.blivesta.com/drawer/">Nav1</a></li>
 		<li><a class="drawer-menu-item" href="#">Nav2</a></li>
 		</ul>
 		</nav>
