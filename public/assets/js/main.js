@@ -18,9 +18,9 @@ console.log("Hello World");
 	// prependTo:'#demo2'
 //});
 
-jQuery(function($){
-  $('#header-menu').slicknav();
-});
+// jQuery(function($){
+//   $('#header-menu').slicknav();
+// });
 
 // 遅延読み込み 参考=>https://syncer.jp/how-to-setting-lazy-load-images
 // Lazy Loadを起動する
