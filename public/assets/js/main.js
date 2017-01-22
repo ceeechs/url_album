@@ -1,26 +1,4 @@
-// ↓.hoge内のimgを隠す
-// $(function(){
-// 	$("#first_img").css("display","none");
-// });
-
-// //↓windowがロードされたらimgをフェードインさせる
-// $(window).bind("load",function(){
-// 	$("#first_img").fadeIn(3000);
-// });
-
 console.log("Hello World");
-
-// ヘッダーメニュー
-//$('#header-menu').slicknav({
-	//label: '',
-	//duration: 1000,
-	//easingOpen: "easeOutBounce", //available with jQuery UI
-	// prependTo:'#demo2'
-//});
-
-// jQuery(function($){
-//   $('#header-menu').slicknav();
-// });
 
 // 遅延読み込み 参考=>https://syncer.jp/how-to-setting-lazy-load-images
 // Lazy Loadを起動する
