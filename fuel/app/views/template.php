@@ -9,9 +9,21 @@
 
 	<!-- フォント -->
 	<style>@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);</style>
+
+	<script>
+		$(function(){
+			$('#menu').slicknav();
+		});
+	</script>
 </head>
 <body>
 	<!-- ヘッダーメニュー -->
+	<ul id="menu">
+		<li><a class="scroll" href="#features">Features</a></li>
+		<li><a class="scroll" href="#usage">Usage Instructions</a></li>
+		<li><a class="scroll" href="#examples">Examples</a></li>
+		<li><a href="http://github.com">View on Github</a></li>
+	</ul>
 	<!-- http://www.webdesignleaves.com/wp/jquery/1384/ -->
 	<div>
 		<ul id="header-menu">
