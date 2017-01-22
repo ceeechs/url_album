@@ -3,6 +3,7 @@
 * Copyright 2013 Twitter Inc.
 * http://www.apache.org/licenses/LICENSE-2.0
 */
+console.log("bootstrap 読み込み");
 if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
 
 /* ========================================================================
