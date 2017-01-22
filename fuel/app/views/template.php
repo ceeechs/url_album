@@ -20,10 +20,13 @@
 </head>
 <body class="drawer">
 	<!--navbar-inverseで黒色のナビゲーションへ-->
-     <nav class="navbar navbar-inverse navbar-fixed-bottom">
+     <nav class="navbar navbar-inverse">
+         
          <!--ウィンドウ幅に合わせて可変-->
         <div class="container-fluid">
+            
           <div class="navbar-header">
+              
             <!--スマホ用トグルボタンの設置-->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
@@ -31,23 +34,31 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+              
             <!--ロゴ表示の指定-->
             <a class="navbar-brand" href="#">MK Coffee</a>
           </div>
+            
             <!--スマホ用の画面幅が小さいときの表示を非表示にする-->
           <div id="navbar" class="navbar-collapse collapse">
+              
             <ul class="nav navbar-nav">
-              <li><a href="#">Home</a></li>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Information</a></li>
+              <li><a href="#">Menu</a></li>
               <li><a href="#">Map</a></li>
+                
                 <!--ドロップダウンメニューの作成-->
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <a href="mizukazu.minibird.jp" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li class="divider"></li>
+                  <li class="dropdown-header">会社情報</li>
                   <li><a href="#">企業理念</a></li>
                   <li><a href="#">会社概要</a></li>
                     
                   <li class="divider"></li>
+                  <li class="dropdown-header">求人情報</li>
                   <li><a href="#">正社員・アルバイト募集</a></li>
                   <li><a href="#">スタッフより</a></li>
                 </ul>
