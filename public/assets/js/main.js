@@ -19,7 +19,7 @@ console.log("Hello World");
 //});
 
 jQuery(function($){
-  $('#menu').slicknav();
+  $('#header-menu').slicknav();
 });
 
 // 遅延読み込み 参考=>https://syncer.jp/how-to-setting-lazy-load-images
