@@ -12,42 +12,25 @@
 
 	<script>
 		$(function(){
-			$('#header-menu').slicknav();
+			$('#menu').slicknav();
 		});
 	</script>
 </head>
 <body>
+	<!-- ヘッダーメニュー -->
+	<ul id="menu">
+		<li><a class="scroll" href="#features">Features</a></li>
+		<li><a class="scroll" href="#usage">Usage Instructions</a></li>
+		<li><a class="scroll" href="#examples">Examples</a></li>
+		<li><a href="http://github.com">View on Github</a></li>
+	</ul>
 	<!-- http://www.webdesignleaves.com/wp/jquery/1384/ -->
 	<div class="container">
 		<div class="row header">
 			<div class="col-sm-12">
 				<!-- <button type="button" class="btn btn-default">Default</button> -->
 				<p>URL-ALBUM</p>
-				<!-- ヘッダーメニュー -->
-				<ul id="header-menu">
-				    <li>Parent 1
-				        <ul>
-				            <li><a href="#">item 3</a></li>
-				            <li>Parent 3
-				                <ul>
-				                    <li><a href="#">item 8</a></li>
-				                    <li><a href="#">item 9</a></li>
-				                    <li><a href="#">item 10</a></li>
-				                </ul>
-				            </li>
-				            <li><a href="#">item 4</a></li>
-				        </ul>
-				    </li>
-				    <li><a href="#">item 1</a></li>
-				    <li>non-link item</li>
-				    <li>Parent 2
-				        <ul>
-				            <li><a href="#">item 5</a></li>
-				            <li><a href="#">item 6</a></li>
-				            <li><a href="#">item 7</a></li>
-				        </ul>
-				    </li>
-				</ul>
+
 			</div>
 		</div>
 	</div>
