@@ -16,7 +16,7 @@ body {
 
 /*ヘッダー*/
 #navToggle {
-    display:none; /*通常時は非表示にしておきます*/
+    /*display:none;*/ /*通常時は非表示にしておきます*/
     position:absolute; /*bodyに対しての絶対位置指定です*/
     right:13px;
     top:13px;

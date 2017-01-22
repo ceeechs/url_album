@@ -6,19 +6,17 @@
 	<title><?php echo $title; ?></title>
 	<?php echo Asset::css(array("bootstrap.css", "main.css", "comment.css", "zoom.css")); ?>
 	<!-- , "slicknav.css" -->
-	<?php echo Asset::js(array( "bootstrap.min.js", "jquery.lazyload.min.js", "zoom.js", "main.js")); ?>
-	<!--"jquery-3.1.1.min.js", ,"jquery-ui.min.js","jquery.slicknav.min.js"  -->
+	<?php echo Asset::js(array("jquery-3.1.1.min.js", "bootstrap.min.js", "jquery.lazyload.min.js", "zoom.js", "main.js")); ?>
+	<!-- ,"jquery-ui.min.js","jquery.slicknav.min.js"  -->
 
 	<!-- フォント -->
 	<style>@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);</style>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 	<script>
 		// $(function(){
 		// 	$('#headr-menu').slicknav();
 		// });
-
+		
 		$(function() {
 		    $('#navToggle').click(function(){//headerに .openNav を付加・削除
 		        $('header').toggleClass('openNav');
