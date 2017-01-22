@@ -25,7 +25,7 @@
 		<li><a href="http://github.com">View on Github</a></li>
 	</ul>
 	<!-- http://www.webdesignleaves.com/wp/jquery/1384/ -->
-	<div>
+	<!-- <div>
 		<ul id="header-menu">
 		    <li>Parent 1
 		        <ul>
@@ -50,7 +50,7 @@
 		        </ul>
 		    </li>
 		</ul>
-	</div>
+	</div> -->
 	<div class="container">
 		<div class="row header">
 			<div class="col-sm-12">
