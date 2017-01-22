@@ -19,10 +19,10 @@
 <body>
 	<!-- ヘッダーメニュー -->
 	<ul id="menu">
-		<li><a class="scroll" href="#features">Features</a></li>
+		<!-- <li><a class="scroll" href="#features">Features</a></li>
 		<li><a class="scroll" href="#usage">Usage Instructions</a></li>
 		<li><a class="scroll" href="#examples">Examples</a></li>
-		<li><a href="http://github.com">View on Github</a></li>
+		<li><a href="http://github.com">View on Github</a></li> -->
 	</ul>
 	<!-- http://www.webdesignleaves.com/wp/jquery/1384/ -->
 	<div class="container">
