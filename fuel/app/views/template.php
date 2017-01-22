@@ -18,7 +18,7 @@
 		// });
 	</script>
 </head>
-<body class="drawer">
+<body>
 	<!--navbar-inverseで黒色のナビゲーションへ-->
      <nav class="navbar navbar-inverse">
          
