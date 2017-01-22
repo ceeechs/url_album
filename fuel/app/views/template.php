@@ -11,12 +11,34 @@
 	<style>@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);</style>
 
 	<script>
-		$(function(){
-			$('#headr-menu').slicknav();
+		// $(function(){
+		// 	$('#headr-menu').slicknav();
+		// });
+		$(function() {
+		    $('#navToggle').click(function(){//headerに .openNav を付加・削除
+		        $('header').toggleClass('openNav');
+		    });
 		});
 	</script>
 </head>
 <body>
+	<header>
+	<h1><a href="index.html"><img src="img/header_logo.png"></a></h1>
+	<div id="navToggle">
+	  <div>
+	   <span></span> <span></span> <span></span>
+	  </div>
+	</div><!--#navToggle END-->
+	<nav>
+	  <ul>
+	   <li><a href="#">HOME</a></li>
+	   <li><a href="#">MENU1</a></li>
+	   <li><a href="#">MENU2</a></li>
+	   <li><a href="#">MENU3</a></li>
+	   <li><a href="#">MENU4</a></li>
+	  </ul>
+	</nav>
+	</header>
 	<!-- ヘッダーメニュー -->
 	<ul id="headr-menu">
 		<li><a class="scroll" href="#">2015年</a></li>
