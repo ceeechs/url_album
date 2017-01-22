@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="robots" content="noimageindex">
 	<title><?php echo $title; ?></title>
-	<?php echo Asset::css(array("bootstrap.css", "main.css", "comment.css", "zoom.css", "slicknav.css")); ?>
-	<?php echo Asset::js(array("jquery-3.1.1.min.js","jquery-ui.min.js", "bootstrap.min.js", "jquery.lazyload.min.js", "zoom.js", "jquery.slicknav.min.js", "main.js")); ?>
+	<?php echo Asset::css(array("bootstrap.css", "main.css", "comment.css", "zoom.css")); ?>
+	<!-- , "slicknav.css" -->
+	<?php echo Asset::js(array("jquery-3.1.1.min.js", "bootstrap.min.js", "jquery.lazyload.min.js", "zoom.js", "main.js")); ?>
+	<!-- ,"jquery-ui.min.js","jquery.slicknav.min.js"  -->
 
 	<!-- フォント -->
 	<style>@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);</style>
@@ -23,7 +25,7 @@
 </head>
 <body>
 	<header>
-	<h1><a href="index.html"><img src="img/header_logo.png"></a></h1>
+	<h1>ロゴ<!-- <a href="index.html"><img src="img/header_logo.png"></a> --></h1>
 	<div id="navToggle">
 	  <div>
 	   <span></span> <span></span> <span></span>
@@ -40,11 +42,11 @@
 	</nav>
 	</header>
 	<!-- ヘッダーメニュー -->
-	<ul id="headr-menu">
+	<!-- <ul id="headr-menu">
 		<li><a class="scroll" href="#">2015年</a></li>
 		<li><a class="scroll" href="#">2016年</a></li>
 		<li><a class="scroll" href="#">2017年</a></li>
-	</ul>
+	</ul> -->
 	<!-- http://www.webdesignleaves.com/wp/jquery/1384/ -->
 	<div class="container">
 		<div class="row header">
