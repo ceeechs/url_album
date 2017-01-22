@@ -5,7 +5,6 @@
 	<meta name="robots" content="noimageindex">
 	<title><?php echo $title; ?></title>
 	<?php echo Asset::css(array("bootstrap.css", "main.css", "comment.css", "zoom.css", "slicknav.css")); ?>
-	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
 	<?php echo Asset::js(array("jquery-3.1.1.min.js","jquery-ui.min.js", "bootstrap.min.js", "jquery.lazyload.min.js", "zoom.js", "jquery.slicknav.min.js", "main.js")); ?>
 
 	<!-- フォント -->
