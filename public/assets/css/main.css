@@ -61,6 +61,7 @@ img.type0 {
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 80px;
+	margin-top: 40px;
 	/*3D回転*/
 	/*-webkit-transform: skewY(10deg);
 	-ms-transform: skewY(10deg);
@@ -75,6 +76,7 @@ img.type1 {
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 30px;
+	margin-top: 40px;
 	/*3D回転*/
 	/*-webkit-transform: skewY(10deg);
 	-ms-transform: skewY(10deg);
