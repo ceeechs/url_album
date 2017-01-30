@@ -16,7 +16,7 @@
 	</script>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar navbar-default">
        <!--ウィンドウ幅に合わせて可変-->
       <div class="container-fluid">
         <div class="navbar-header">
@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
           </button>
           <!--ロゴ表示の指定-->
-          <a class="navbar-brand" href="#">MK Coffee</a>
+          <a class="navbar-brand" href="#">URL-Album</a>
         </div>
           <!--スマホ用の画面幅が小さいときの表示を非表示にする-->
         <div id="navbar" class="navbar-collapse collapse">
