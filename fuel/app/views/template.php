@@ -25,7 +25,7 @@ header("Pragma: no-cache");
 </head>
 <body>
 	<!-- http://www.webdesignleaves.com/wp/jquery/1384/ -->
-	<div class="container">
+	<div class="container title">
 		<div class="row header">
 			<div class="col-sm-12">
 				<!-- <button type="button" class="btn btn-default">Default</button> -->

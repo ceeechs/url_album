@@ -16,7 +16,7 @@
 
 		<?php if( empty( $pre_month ) || $pre_month != $month ) : ?>
 			<!-- <div class="jumbotron m_background_<?php //echo $month;?>"> -->
-				<div class="container-fluid m_background_<?php echo $month;?>">
+				<div class="container-fluid month m_background_<?php echo $month;?>">
 		<?php endif ;?>
 
 		<?php if ( $content_no == 0 || $prev_year_month != $year_month ): ?>

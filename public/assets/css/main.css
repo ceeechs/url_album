@@ -10,6 +10,10 @@ body {
 	background-color: #D0ECEA;
 }
 
+.title{
+	padding: 30px 0px 10px 0;
+}
+
 
 /*配色参考*/
 /*http://www.colourlovers.com/palette/57650/She_Sells_Seashells.*/
@@ -20,6 +24,10 @@ body {
 
 .content{
 	padding-bottom: 50px;
+}
+
+.month{
+	padding-top: 30px;
 }
 
 .m_background_12{
