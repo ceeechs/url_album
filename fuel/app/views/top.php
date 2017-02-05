@@ -36,10 +36,10 @@
 					<?php endif;?>
 					<div>
 						<?php if($content->content_type == 'image'): ?>
-							<img class="type<?php echo $image_class_no;?> lazy" data-action="zoom" src="https://www.starflyer.jp/10th_anniversary/campaign/img/socialin/loading.gif" data-original="<?= Asset::img($content->content_url); ?>" alt="">
+							<img class="type<?php echo $image_class_no;?> lazy" data-action="zoom" src="https://www.starflyer.jp/10th_anniversary/campaign/img/socialin/loading.gif" data-original="https://www.url-album.xyz/assets/img/<?= $content->content_url; ?>" alt="">
 						<?php elseif($content->content_type == 'video'): ?>
 							<video width="600" height="1100" autoplay loop muted preload=auto poster="" controls>
-								<source src="<?= Asset::img($content->content_url); ?>" >
+								<source src="https://www.url-album.xyz/assets/img/<?= $content->content_url; ?>" >
 							</video>
 						<?php endif ; ?>
 					</div>
