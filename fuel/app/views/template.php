@@ -11,6 +11,7 @@ header("Pragma: no-cache");
 <head>
 	<meta charset="UTF-8">
 	<meta name="robots" content="noimageindex">
+	<meta name=”robots” content=”noindex”>
 	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes">
 	<title><?php echo $title; ?></title>
 	<?php echo Asset::css(array("bootstrap.css", "main.css", "comment.css")); ?>
