@@ -95,6 +95,8 @@ class Controller_Top extends \Controller_Rest
                 // 入っていなければ処理終了
                 if (is_null($prev_content_info)) break;
 
+                // リソースを保存
+                $this->save_resource($prev_content['content_id']);
                 // IDとテキストをDBに登録
                 $prev_content = json_decode($prev_content_info, true);
                 \Model_Contents::forge(array(
@@ -126,8 +128,11 @@ class Controller_Top extends \Controller_Rest
                 $album = \Model_Albums::find_by_pk($album_id);
                 $prev_content_info = $album['content_info'];
 
-                // 情報が入っていたら、DBに書き込む
+                // 情報が入っていたら
                 if(!is_null($prev_content_info)){
+                    // リソースを保存
+                    $this->save_resource($prev_content['content_id']);
+                    // DBに書き込む
                     $prev_content = json_decode($prev_content_info, true);
                     \Model_Contents::forge(array(
                         'album_id' => $album_id,
@@ -390,6 +395,34 @@ class Controller_Top extends \Controller_Rest
         }
 
         return $url;
+    }
+
+    /**
+     * リソース保存
+     */
+    private function save_resource($content_id)
+    {
+        $path = '/var/www/html/url_album/fuel/public/assets/img/'.$content_id
+        // Botインスタンス生成
+        $bot = new \LINE\LINEBot(
+            new \LINE\LINEBot\HTTPClient\CurlHTTPClient(\Def_Bot::ACCESS_TOKEN),
+            ['channelSecret' => \Def_Bot::CHANNEL_SECRET]
+        );
+        // リソースの取得(LINEサーバー)
+        $response = $bot->getMessageContent($content_id);
+        if ($response->isSucceeded()) {
+            $data = $response->getRawBody();
+            file_put_contents($path, $data);
+            return $data;
+        } else {
+            $result = json_decode($response->getRawBody(), true);
+            // リソースが既にサーバーから削除されている場合
+            if (!$result['message'] == "Not found") {
+                // 謎のエラー->ログに出力
+                \Log::error($response->getHTTPStatus() . ' ' . $response->getRawBody());
+            }
+            return null;
+        }
     }
 
 }
