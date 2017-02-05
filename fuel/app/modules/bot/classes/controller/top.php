@@ -402,7 +402,7 @@ class Controller_Top extends \Controller_Rest
      */
     private function save_resource($content_id)
     {
-        $path = '/var/www/html/url_album/fuel/public/assets/img/'.$content_id
+        $path = '/var/www/html/url_album/fuel/public/assets/img/'.$content_id;
         // Botインスタンス生成
         $bot = new \LINE\LINEBot(
             new \LINE\LINEBot\HTTPClient\CurlHTTPClient(\Def_Bot::ACCESS_TOKEN),
