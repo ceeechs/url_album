@@ -95,8 +95,6 @@ class Controller_Top extends \Controller_Rest
                 // 入っていなければ処理終了
                 if (is_null($prev_content_info)) break;
 
-                // リソースを保存
-                $this->save_resource($prev_content['content_id']);
                 // IDとテキストをDBに登録
                 $prev_content = json_decode($prev_content_info, true);
                 \Model_Contents::forge(array(
@@ -105,6 +103,8 @@ class Controller_Top extends \Controller_Rest
                     'content_url' => $prev_content['content_id'],
                     'text' => $text
                 ))->save();
+                // リソースを保存
+                $this->save_resource($prev_content['content_id']);
 
                 // コンテンツ情報を削除
                 \Model_Albums::forge(array(
@@ -130,8 +130,6 @@ class Controller_Top extends \Controller_Rest
 
                 // 情報が入っていたら
                 if(!is_null($prev_content_info)){
-                    // リソースを保存
-                    $this->save_resource($prev_content['content_id']);
                     // DBに書き込む
                     $prev_content = json_decode($prev_content_info, true);
                     \Model_Contents::forge(array(
@@ -139,6 +137,8 @@ class Controller_Top extends \Controller_Rest
                         'content_type' => $prev_content['type'],
                         'content_url' => $prev_content['content_id']
                     ))->save();
+                    // リソースを保存
+                    $this->save_resource($prev_content['content_id']);
                 }
 
                 // コンテンツの情報を保存
