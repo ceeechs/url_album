@@ -29,9 +29,11 @@
 		<?php $comment_class_no = $content_no % \Def_App::COMMENT_CSS_NUM; ?>
 		<?php $image_class_no = $content_no % \Def_App::IMAGE_CSS_NUM; ?>
 				<div class="row content">
+					<?php if (!empty($content->text)): ?>
 					<div class="col-sm-12">
 						<p class="comment_type_<?php echo $comment_class_no;?>"><?php echo $content->text;?></p>
 					</div>
+					<?php endif;?>
 					<div>
 						<?php if($content->content_type == 'image'): ?>
 							<img class="type<?php echo $image_class_no;?> lazy" data-action="zoom" src="https://www.starflyer.jp/10th_anniversary/campaign/img/socialin/loading.gif" data-original="<?php echo 'https://www.url-album.xyz/album/resource/index/'.$content->content_url; ?>" alt="">
