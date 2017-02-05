@@ -105,7 +105,7 @@ class Controller_Top extends \Controller_Rest
                     'text' => $text
                 ))->save();
                 // リソースを保存
-                $result = $this->save_resource($prev_content['content_id']);
+                $result = $this->save_resource($prev_content['content_id'],$prev_content['type']);
                 if (is_null($result)) {
                     \DB::rollback_transaction();
                 } else {
@@ -146,7 +146,7 @@ class Controller_Top extends \Controller_Rest
                         'content_url' => $prev_content['content_id']
                     ))->save();
                     // リソースを保存
-                    $result = $this->save_resource($prev_content['content_id']);
+                    $result = $this->save_resource($prev_content['content_id'],$prev_content['type']);
                     if (is_null($result)) {
                         \DB::rollback_transaction();
                     } else {
@@ -413,9 +413,10 @@ class Controller_Top extends \Controller_Rest
     /**
      * リソース保存
      */
-    private function save_resource($content_id)
+    private function save_resource($content_id, $content_type)
     {
         $path = '/var/www/html/url_album/public/assets/img/'.$content_id;
+        if($content_type == 'video') $path=$path.'.mp4';
         // Botインスタンス生成
         $bot = new \LINE\LINEBot(
             new \LINE\LINEBot\HTTPClient\CurlHTTPClient(\Def_Bot::ACCESS_TOKEN),
