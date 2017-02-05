@@ -97,12 +97,21 @@ class Controller_Top extends \Controller_Rest
 
                 // IDとテキストをDBに登録
                 $prev_content = json_decode($prev_content_info, true);
+                \DB::start_transaction();
                 \Model_Contents::forge(array(
                     'album_id' => $album_id,
                     'content_type' => $prev_content['type'],
                     'content_url' => $prev_content['content_id'],
                     'text' => $text
                 ))->save();
+                // リソースを保存
+                $result = $this->save_resource($prev_content['content_id']);
+                if (is_null($result)) {
+                    \DB::rollback_transaction();
+                } else {
+                    \DB::commit_transaction();
+                }
+
 
                 // コンテンツ情報を削除
                 \Model_Albums::forge(array(
@@ -126,14 +135,23 @@ class Controller_Top extends \Controller_Rest
                 $album = \Model_Albums::find_by_pk($album_id);
                 $prev_content_info = $album['content_info'];
 
-                // 情報が入っていたら、DBに書き込む
+                // 情報が入っていたら
                 if(!is_null($prev_content_info)){
+                    // DBに書き込む
                     $prev_content = json_decode($prev_content_info, true);
+                    \DB::start_transaction();
                     \Model_Contents::forge(array(
                         'album_id' => $album_id,
                         'content_type' => $prev_content['type'],
                         'content_url' => $prev_content['content_id']
                     ))->save();
+                    // リソースを保存
+                    $result = $this->save_resource($prev_content['content_id']);
+                    if (is_null($result)) {
+                        \DB::rollback_transaction();
+                    } else {
+                        \DB::commit_transaction();
+                    }
                 }
 
                 // コンテンツの情報を保存
@@ -390,6 +408,34 @@ class Controller_Top extends \Controller_Rest
         }
 
         return $url;
+    }
+
+    /**
+     * リソース保存
+     */
+    private function save_resource($content_id)
+    {
+        $path = '/var/www/html/url_album/public/assets/img/'.$content_id;
+        // Botインスタンス生成
+        $bot = new \LINE\LINEBot(
+            new \LINE\LINEBot\HTTPClient\CurlHTTPClient(\Def_Bot::ACCESS_TOKEN),
+            ['channelSecret' => \Def_Bot::CHANNEL_SECRET]
+        );
+        // リソースの取得(LINEサーバー)
+        $response = $bot->getMessageContent($content_id);
+        if ($response->isSucceeded()) {
+            $data = $response->getRawBody();
+            file_put_contents($path, $data);
+            return $data;
+        } else {
+            $result = json_decode($response->getRawBody(), true);
+            // リソースが既にサーバーから削除されている場合
+            if (!$result['message'] == "Not found") {
+                // 謎のエラー->ログに出力
+                \Log::error($response->getHTTPStatus() . ' ' . $response->getRawBody());
+            }
+            return null;
+        }
     }
 
 }
