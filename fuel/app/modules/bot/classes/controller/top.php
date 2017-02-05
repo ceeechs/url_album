@@ -97,11 +97,13 @@ class Controller_Top extends \Controller_Rest
 
                 // IDとテキストをDBに登録
                 $prev_content = json_decode($prev_content_info, true);
+                $content_url = $prev_content['content_id'];
+                if($prev_content['type'] == 'video') $content_url = $content_url.'mp4';
                 \DB::start_transaction();
                 \Model_Contents::forge(array(
                     'album_id' => $album_id,
                     'content_type' => $prev_content['type'],
-                    'content_url' => $prev_content['content_id'],
+                    'content_url' => $content_url,
                     'text' => $text
                 ))->save();
                 // リソースを保存
@@ -139,11 +141,13 @@ class Controller_Top extends \Controller_Rest
                 if(!is_null($prev_content_info)){
                     // DBに書き込む
                     $prev_content = json_decode($prev_content_info, true);
+                    $content_url = $prev_content['content_id'];
+                    if($prev_content['type'] == 'video') $content_url = $content_url.'mp4';
                     \DB::start_transaction();
                     \Model_Contents::forge(array(
                         'album_id' => $album_id,
                         'content_type' => $prev_content['type'],
-                        'content_url' => $prev_content['content_id']
+                        'content_url' => $content_url
                     ))->save();
                     // リソースを保存
                     $result = $this->save_resource($prev_content['content_id'],$prev_content['type']);
