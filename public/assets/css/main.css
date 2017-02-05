@@ -11,8 +11,16 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+.container{
+	padding-right: 0;
+	padding-left: 0
+}
+.row{
+	margin: 0 0;
+}
+
 .title{
-	padding: 30px 0px 10px 0;
+	/*padding: 30px 0px 10px 0;*/
 }
 
 
@@ -22,10 +30,10 @@ body {
 .container{
 	/*max-width: 100%;*/
 }
-
+/*
 .content{
 	padding-bottom: 50px;
-}
+}*/
 
 .month{
 	padding-top: 30px;
@@ -68,7 +76,7 @@ img.type0 {
 	width: 70%;
 	height: 70%;
 	display: block;
-	margin: 100px auto 30px auto;
+	margin: 20px auto 30px auto;
 	border-radius: 80px;
 	/*3D回転*/
 	/*-webkit-transform: skewY(10deg);
@@ -81,7 +89,7 @@ img.type1 {
 	width: 70%;
 	height: 70%;
 	display: block;
-	margin: 100px auto 30px auto;
+	margin: 20px auto 30px auto;
 	border-radius: 30px;
 	/*3D回転*/
 	/*-webkit-transform: skewY(10deg);
@@ -107,6 +115,10 @@ img.type2:after {
 	transform: rotate(3deg);
 	background: #fff;
 	z-index: -1;*/
+}
+
+.video{
+	margin: 20px auto;
 }
 
 
