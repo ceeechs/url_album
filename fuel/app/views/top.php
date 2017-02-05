@@ -8,14 +8,12 @@
 		?>
 
 		<?php if( isset($pre_month) && $pre_month != $month ) : ?>
-		<!-- jumbotronとcontainerの閉じタグ -->
 		<!-- htmlタグのインデントを基準に記載 -->
 				</div>
 			<!-- </div> -->
 		<?php endif ;?>
 
 		<?php if( empty( $pre_month ) || $pre_month != $month ) : ?>
-			<!-- <div class="jumbotron m_background_<?php //echo $month;?>"> -->
 				<div class="container-fluid month m_background_<?php echo $month;?>">
 		<?php endif ;?>
 
