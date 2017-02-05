@@ -29,18 +29,18 @@ class Controller_Top extends \Controller_Template
 		// TODO::コンテンツないい時の専用ページに飛ばしてもいいかも
 		if ( empty($data['contents'] ) ) return \View::forge('test', $data);
 
-		foreach ($data['contents'] as $key => $value) {
-			// もし2週間以上前のデータだったら
-			if ($value['created_at'] < $expired_date) {
-				// 表示対象から取り除く
-				unset($data['contents'][$key]);
-				// delフラグ立てる
-				\Model_Contents::forge(array(
-				    'content_id' => $value['content_id'],
-				    'is_deleted' => 1
-				    ))->is_new(false)->save();
-			}
-		}
+		// foreach ($data['contents'] as $key => $value) {
+		// 	// もし2週間以上前のデータだったら
+		// 	if ($value['created_at'] < $expired_date) {
+		// 		// 表示対象から取り除く
+		// 		unset($data['contents'][$key]);
+		// 		// delフラグ立てる
+		// 		\Model_Contents::forge(array(
+		// 		    'content_id' => $value['content_id'],
+		// 		    'is_deleted' => 1
+		// 		    ))->is_new(false)->save();
+		// 	}
+		// }
 
 		$this->template->content = \View::forge('top', $data);
 
