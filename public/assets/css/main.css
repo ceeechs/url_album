@@ -23,16 +23,13 @@ body {
 }
 
 .m_background_12{
-	/*background-image: url("https://pics.prcm.jp/19981016/19884470.jpeg");
-	background-repeat: repeat;*/
-	/*background: url("https://pics.prcm.jp/19981016/19884470.jpeg") repeat;*/
 	background-color: #F5E0D3;
 }
 .m_background_01{
-	/*background-image: url("http://01.gatag.net/img/201507/14l/gatag-00010730.jpg");
-	background-repeat: repeat;*/
-	/*background: url("http://jonaden.jp/wordpress/wp-content/uploads/2013/01/kabegami-3-1.jpg") repeat;*/
 	background-color: #D0ECEA;
+}
+.m_background_02{
+	background-color: #F5CCCC;
 }
 
 .header{
