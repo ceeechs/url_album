@@ -33,7 +33,7 @@ header("Pragma: no-cache");
 		  </div>
 		 
 		  <div id="gnavi" class="collapse navbar-collapse">
-		    <ul class="nav navbar-nav">
+		    <ul id="nav_ul" class="nav navbar-nav">
 		      <li><a href="">Link1</a></li>
 		      <li><a href="">Link2</a></li>
 		      <li><a href="">Link3</a></li>

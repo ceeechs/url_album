@@ -18,6 +18,9 @@
 		<?php endif ;?>
 
 		<?php if ( $content_no == 0 || $prev_year_month != $year_month ): ?>
+				<script>
+					$('#nav_ul').append('<li><?php echo $year_month;?></li>');
+				</script>
 				<div class="row">
 					<p class="date">
 						<?php echo $year.'年'.$month.'月'; ?>
