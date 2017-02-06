@@ -9,3 +9,9 @@ $( function(){
 			effect_speed: 1500 ,	// ミリ秒
 		});
 });
+
+$(document).ready(function () {
+	$(".navbar-nav li a").click(function(event) {
+		$(".navbar-collapse").collapse('hide');
+	});
+});
