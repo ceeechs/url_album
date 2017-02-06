@@ -102,11 +102,11 @@ video {
 }
 
 img.type0 {
-	width: 70%;
+	width: 80%;
 	height: 70%;
 	display: block;
 	margin: 20px auto 30px auto;
-	border-radius: 80px;
+	border-radius: 30px;
 	/*3D回転*/
 	/*-webkit-transform: skewY(10deg);
 	-ms-transform: skewY(10deg);
@@ -115,7 +115,7 @@ img.type0 {
 }
 
 img.type1 {
-	width: 70%;
+	width: 80%;
 	height: 70%;
 	display: block;
 	margin: 20px auto 30px auto;
