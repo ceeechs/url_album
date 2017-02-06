@@ -19,9 +19,9 @@
 
 		<?php if ( $content_no == 0 || $prev_year_month != $year_month ): ?>
 				<script>
-					$('#nav_ul').append('<li><?php echo $year_month;?></li>');
+					$('#nav_ul').appendChild('<li><a href="#<?php echo $year_month;?>"><?php echo $year.'年'.$month.'月';?></a></li>');
 				</script>
-				<div class="row">
+				<div id="<?php echo $year_month; ?>" class="row">
 					<p class="date">
 						<?php echo $year.'年'.$month.'月'; ?>
 					</p>
