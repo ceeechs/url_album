@@ -315,7 +315,7 @@ class Controller_Top extends \Controller_Rest
                     $count = count($result);
                     $message = "今までに作ったアルバムは".$count."個デビー";
                     foreach ($result as $album) {
-                        $message .= "\n".self::BASE_URL.$album['album_url'];
+                        $message .= "\n".self::BASE_URL.$album['album_url']."\n";
                     }
                 }
                 $bot->replyText($reply_token, $message);
