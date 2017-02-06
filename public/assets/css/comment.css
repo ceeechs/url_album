@@ -2,11 +2,15 @@
 .comment_type_0 {
 	padding: 10px 10px;
 	background: #FFFEE4;
+	font-size: 17px;
 	box-shadow: #FFFEE4 0 0 10px 10px;
 	-webkit-box-shadow: #FFFEE4 0 0 10px 10px;
 	-moz-box-shadow: #FFFEE4 0 0 10px 10px;
 }
 
+
+
+/*以下未使用*/
 .comment_type_1 {
 	padding: 10px 10px;
 	background: #DE6262;
